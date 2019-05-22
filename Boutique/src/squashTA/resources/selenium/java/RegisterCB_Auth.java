@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 
-  public class RegisterCB {
+  public class RegisterCB_Auth {
 	 private FirefoxBinary binary = new FirefoxBinary(new File("C:/Users/gcmbembeyegdjong/Desktop/Squash/Firefox12/firefox.exe"));
 	 private FirefoxProfile profile = new FirefoxProfile();
 	 private WebDriver driver;
@@ -51,7 +51,7 @@ import java.util.Map;
   }
 
   @Test
-  public void testRegisterCB() throws Exception {
+  public void testRegisterCB_Auth() throws Exception {
     driver.get(baseUrl);
     driver.manage().window().setSize(new Dimension(1280, 680));
    	driver.findElement(By.cssSelector(".header-right-menu > nav > ul > li:nth-child(1) > a")).click();
@@ -96,7 +96,7 @@ import java.util.Map;
     
                /********* CB, VISA **********/
     //BOUTIKCB, VISA - Paiement accepté, avec authentification 3D Secure
-    //driver.findElement(By.linkText("4970 1000 0000 0014")).click();
+    driver.findElement(By.linkText("4970 1000 0000 0014")).click();
    
 	//BOUTIKCB, VISA - Paiement accepté, acheteur non enrôlé 3D Secure
 	//driver.findElement(By.linkText("4970 1000 0000 0048")).click();
@@ -111,7 +111,7 @@ import java.util.Map;
 	//driver.findElement(By.linkText("4970 1000 0000 0030")).click();
 	
 	//BOUTIKCB, VISA - Paiement avec authentification 3D Secure interactive
-	driver.findElement(By.linkText("4970 1000 0000 0022")).click();
+	//driver.findElement(By.linkText("4970 1000 0000 0022")).click();
 	
 	
 	//BOUTIKCB, VISA - Paiement refusé pour cause d'authentification 3D Secure échouée, l'acheteur n'est pas parvenu à s'authentifier

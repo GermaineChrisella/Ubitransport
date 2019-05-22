@@ -12,4 +12,4 @@ LOAD sample-resource.txt AS resource
 
 TEST :
 
-# EXECUTE_SELENIUM2 selenium WITH MAIN CLASS RegisterCB
+# EXECUTE_SELENIUM2 selenium WITH MAIN CLASS DeclinedCB_Exceeded
