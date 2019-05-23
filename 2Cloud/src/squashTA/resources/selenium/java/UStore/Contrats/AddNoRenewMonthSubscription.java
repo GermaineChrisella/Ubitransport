@@ -110,7 +110,7 @@ import java.util.Map;
     driver.findElement(By.id("FareBasketCgv")).click();
     driver.findElement(By.cssSelector("button")).click();
     
-               /********* CB, VISA **********/
+               /********* CB, VISA ***********/
     //BOUTIKCB, VISA - Paiement accepté, avec authentification 3D Secure
     //driver.findElement(By.linkText("4970 1000 0000 0014")).click();
    
