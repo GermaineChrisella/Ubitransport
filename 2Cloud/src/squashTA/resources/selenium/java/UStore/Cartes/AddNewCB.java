@@ -70,6 +70,8 @@ import java.util.Map;
     driver.findElement(By.cssSelector(".btn")).submit();
     assertThat(driver.switchTo().alert().getText(), is("Voulez-vous vraiment supprimer cette carte?"));
     driver.switchTo().alert().accept();
+    driver.findElement(By.cssSelector(".error-image")).click();
+    driver.findElement(By.cssSelector(".add-tag-btn")).click();
     driver.findElement(By.cssSelector(".gt-button")).click();
     driver.findElement(By.cssSelector("#MASTERCARD")).click(); 
     vars.put("iban", driver.findElement(By.cssSelector("#message_mode_test>ul>li:nth-child(1)>a")).getText());

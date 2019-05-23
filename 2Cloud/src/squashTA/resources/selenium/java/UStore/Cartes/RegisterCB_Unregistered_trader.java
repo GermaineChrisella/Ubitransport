@@ -96,7 +96,7 @@ import java.util.Map;
     
                /********* CB, VISA **********/
     //BOUTIKCB, VISA - Paiement accepté, avec authentification 3D Secure
-    //driver.findElement(By.linkText("4970 1000 0000 0014")).click();
+    driver.findElement(By.linkText("4970 1000 0000 0014")).click();
    
 	//BOUTIKCB, VISA - Paiement accepté, acheteur non enrôlé 3D Secure
 	//driver.findElement(By.linkText("4970 1000 0000 0048")).click();
@@ -108,7 +108,7 @@ import java.util.Map;
 	//driver.findElement(By.linkText("4970 1000 0000 0055")).click();
 	
 	//BOUTIKCB, VISA - Paiement accepté, marchand non enrôlé 3D Secure
-	driver.findElement(By.linkText("4970 1000 0000 0030")).click();
+	//driver.findElement(By.linkText("4970 1000 0000 0030")).click();
 	
 	//BOUTIKCB, VISA - Paiement avec authentification 3D Secure interactive
 	//driver.findElement(By.linkText("4970 1000 0000 0022")).click();
