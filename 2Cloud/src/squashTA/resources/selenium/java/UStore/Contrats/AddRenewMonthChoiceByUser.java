@@ -70,9 +70,12 @@ import java.util.Map;
     //vars.put("montant", driver.findElement(By.cssSelector("div > div.right-main-product > div:nth-child(4) > div:nth-child(6) > div > div.single-product-text > div.product-price > span")).getText());
    // System.out.println(vars.get("montant").toString());
     
-   // driver.findElement(By.cssSelector(".right-main-product >div:nth-child(4)>div:nth-child(2) > .single-product-item> .single-product-text> .product-price")).click();
+    driver.findElement(By.cssSelector(".right-main-product >div:nth-child(4)>div:nth-child(2) > .single-product-item> .single-product-text> .product-price")).click();
     System.out.println(1);
-    
+    Thread.sleep((3000))
+    vars.put("montant", driver.findElement(By.cssSelector("div > div.right-main-product > div:nth-child(4) > div:nth-child(6) > div > div.single-product-text > div.product-price > span")).getText());
+    System.out.println(vars.get("montant").toString());
+    Thread.sleep((3000))
     {
      WebElement element = driver.findElement(By.cssSelector(".right-main-product >div:nth-child(4)>div:nth-child(2) > .single-product-item"));
      Actions builder = new Actions(driver);
@@ -103,15 +106,15 @@ import java.util.Map;
     driver.switchTo().alert().accept();
     driver.findElement(By.id("FareBasketEmail")).click();
     driver.findElement(By.cssSelector("button")).click();
-    driver.findElement(By.id("FareBasketPmVISA")).click();
-   // driver.findElement(By.cssSelector(".payment-tokens > .radio > input[type='radio']")).click();
+    //driver.findElement(By.id("FareBasketPmVISA")).click();
+     driver.findElement(By.cssSelector(".payment-tokens > .radio > input[type='radio']")).click();
     driver.findElement(By.id("FareBasketSavePaymentToken")).click();
     driver.findElement(By.id("FareBasketCgv")).click();
     driver.findElement(By.cssSelector("button")).click();
     
                /********* CB, VISA **********/
     //BOUTIKCB, VISA - Paiement accepté, avec authentification 3D Secure
-    driver.findElement(By.linkText("4970 1000 0000 0014")).click();
+    //driver.findElement(By.linkText("4970 1000 0000 0014")).click();
    
 	//BOUTIKCB, VISA - Paiement accepté, acheteur non enrôlé 3D Secure
 	//driver.findElement(By.linkText("4970 1000 0000 0048")).click();

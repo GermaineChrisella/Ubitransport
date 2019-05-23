@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite time="69.235" failures="0" tests="1" name="tests.UStore.Contrats" >
-  <testcase time="69.194" classname="tests.UStore.Contrats" name="AddRenewMonthSubscription.ta" />
+<testsuite time="69.945" failures="0" tests="1" name="tests.UStore.Contrats" >
+  <testcase time="69.917" classname="tests.UStore.Contrats" name="AddObligatoryRenewMonth.ta" />
 </testsuite>
