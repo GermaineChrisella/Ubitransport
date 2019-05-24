@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 
-  public class RegisterCB_Unregistered_Buyer {
+public class RegisterCB_Unregistered_Buyer {
 	 private FirefoxBinary binary = new FirefoxBinary(new File("C:/Users/gcmbembeyegdjong/Desktop/Squash/Firefox12/firefox.exe"));
 	 private FirefoxProfile profile = new FirefoxProfile();
 	 private WebDriver driver;
@@ -41,14 +41,14 @@ import java.util.Map;
 	 private boolean acceptNextAlert = true;
 	 private StringBuffer verificationErrors = new StringBuffer();
 
-  @Before
-  public void setUp() throws Exception {
-    driver = new FirefoxDriver(binary,profile);
+@Before
+public void setUp() throws Exception {
+  driver = new FirefoxDriver(binary,profile);
 	js = (JavascriptExecutor) driver;
 	vars = new HashMap<String, Object>();
-    baseUrl = "https://dev.plateforme-2cloud.com/boutique/connexion";
-    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-  }
+  baseUrl = "https://dev.plateforme-2cloud.com/boutique/connexion";
+  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+}
 
   @Test
   public void testRegisterCB_Unregistered_Buyer() throws Exception {
