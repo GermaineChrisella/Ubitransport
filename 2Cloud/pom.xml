@@ -22,6 +22,16 @@
 				<groupId>org.squashtest.ta</groupId>
 				<artifactId>squash-ta-maven-plugin</artifactId>
 				<version>${ta.framework.version}</version>
+				
+			<dependencies> 
+				<dependency>
+				   <groupId>org.seleniumhq.selenium</groupId>
+				   <artifactId>selenium-java</artifactId>
+				   <version>2.48.2</version>
+				</dependency>
+				
+				</dependencies>
+		 
 
 				<!-- Here you can add libraries to the engine classpath, using the <dependencies></dependencies> 
 					tag -->
@@ -54,7 +64,7 @@
 				  <scope>test</scope>
 				</dependency>
 				
-				<dependencies>
+					<dependencies>
 				<dependency>
 				  <groupId>org.squashtest.ta</groupId>
 				  <artifactId>squash-ta-maven-plugin</artifactId>
@@ -82,18 +92,9 @@
 				   <artifactId>selenium-server</artifactId>
 				   <version>3.11.0</version>
 				</dependency>
-					   
-				</dependencies>
-				-->
-				<dependencies>
-				<dependency>
-				   <groupId>org.seleniumhq.selenium</groupId>
-				   <artifactId>selenium-java</artifactId>
-				   <version>2.48.2</version>
-				</dependency>
-				
-				</dependencies>
 			
+				-->
+				
 
 				<!-- Under here is the Squash TA framework default configuration -->
 				<configuration>

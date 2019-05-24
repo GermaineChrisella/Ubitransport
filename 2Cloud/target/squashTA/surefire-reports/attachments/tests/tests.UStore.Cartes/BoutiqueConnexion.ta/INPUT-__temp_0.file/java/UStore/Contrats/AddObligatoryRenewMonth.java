@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 
-  public class AddNoRenewMonthSubscription {
+  public class AddObligatoryRenewMonth {
 	 private FirefoxBinary binary = new FirefoxBinary(new File("C:/Users/gcmbembeyegdjong/Desktop/Squash/Firefox12/firefox.exe"));
 	 private FirefoxProfile profile = new FirefoxProfile();
 	 private WebDriver driver;
@@ -51,7 +51,7 @@ import java.util.Map;
   }
 
   @Test
-  public void testAddNoRenewMonthSubscription() throws Exception {
+  public void testAddObligatoryRenewMonth() throws Exception {
     driver.get(baseUrl);
     driver.manage().window().setSize(new Dimension(1280, 680));
    	driver.findElement(By.cssSelector(".header-right-menu > nav > ul > li:nth-child(1) > a")).click();
@@ -70,31 +70,31 @@ import java.util.Map;
     //vars.put("montant", driver.findElement(By.cssSelector("div > div.right-main-product > div:nth-child(4) > div:nth-child(6) > div > div.single-product-text > div.product-price > span")).getText());
    // System.out.println(vars.get("montant").toString());
     
-    //driver.findElement(By.cssSelector(".right-main-product >div:last-child>div:last-child >  .single-product-item> .single-product-text> .product-price")).click();
+    driver.findElement(By.cssSelector(".right-main-product >div:nth-child(4)>div:nth-child(3) > .single-product-item> .single-product-text> .product-price")).click();
     System.out.println(1);
     Thread.sleep((3000));
     vars.put("montant", driver.findElement(By.cssSelector("div > div.right-main-product > div:nth-child(4) > div:nth-child(6) > div > div.single-product-text > div.product-price > span")).getText());
     System.out.println(vars.get("montant").toString());
     Thread.sleep((3000));
     {
-     WebElement element = driver.findElement(By.cssSelector(".right-main-product >div:last-child>div:last-child > .single-product-item"));
+     WebElement element = driver.findElement(By.cssSelector(".right-main-product >div:nth-child(4)>div:nth-child(3) > .single-product-item"));
      Actions builder = new Actions(driver);
      builder.moveToElement(element).perform();
     }
     
     System.out.println(2);
     {
-      WebElement element = driver.findElement(By.cssSelector(".right-main-product >div:last-child>div:last-child > .single-product-item> .single-product-text .pro-add-to-cart:nth-child(2)"));
+      WebElement element = driver.findElement(By.cssSelector(".right-main-product >div:nth-child(4)>div:nth-child(3) > .single-product-item> .single-product-text .pro-add-to-cart:nth-child(2)"));
       Actions builder = new Actions(driver);
       builder.moveToElement(element).perform();
     }
     System.out.println(3);
     {
      WebDriverWait wait = new WebDriverWait(driver, 30);
-     wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".right-main-product >div:last-child>div:last-child > .single-product-item> .single-product-text .pro-add-to-cart:nth-child(2)")));
+     wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".right-main-product >div:nth-child(4)>div:nth-child(3) > .single-product-item> .single-product-text .pro-add-to-cart:nth-child(2) .pull-left>a")));
     }
     System.out.println(4);
-    driver.findElement(By.cssSelector(".right-main-product >div:last-child>div:last-child > .single-product-item> .single-product-text .pro-add-to-cart:nth-child(2)")).click();
+    driver.findElement(By.cssSelector(".right-main-product >div:nth-child(4)>div:nth-child(3) > .single-product-item> .single-product-text .pro-add-to-cart:nth-child(2) .pull-left>a")).click();
     driver.findElement(By.id("FareBasketQuantity")).clear();
     driver.findElement(By.id("FareBasketQuantity")).sendKeys("1");
     driver.findElement(By.id("FareBasketQuantity")).click();
@@ -110,7 +110,7 @@ import java.util.Map;
     driver.findElement(By.id("FareBasketCgv")).click();
     driver.findElement(By.cssSelector("button")).click();
     
-               /********* CB, VISA ***********/
+               /********* CB, VISA **********/
     //BOUTIKCB, VISA - Paiement accepté, avec authentification 3D Secure
     //driver.findElement(By.linkText("4970 1000 0000 0014")).click();
    
