@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite time="1.489" failures="0" tests="1" name="tests.UStore.Cartes" >
-  <testcase time="1.48" classname="tests.UStore.Cartes" name="RegisterCB_Unregistered_Buyer.ta" >
+<testsuite time="1.526" failures="0" tests="1" name="tests.UStore.Cartes" >
+  <testcase time="1.518" classname="tests.UStore.Cartes" name="RegisterCB_Unregistered_Buyer.ta" >
     <error message="Test Automation Engine error (non SUT) : method &apos;convert&apos; from engine component of class &apos;org.squashtest.ta.plugin.commons.converter.FileToJavaCodeBundle&apos; with argument &apos;org.squashtest.ta.framework.components.FileResource&apos;  has thrown an exception.
 Details: Java code compilation failed:
-C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110446_4173744789608057176252\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium3979737849508022158temp\java\UStore\Cartes\RegisterCB_Buyer.java:34: error: class RegisterCB_Unregistered_Buyer is public, should be declared in a file named RegisterCB_Unregistered_Buyer.java
+C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110908_201815857970960341516\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium7551608244974598646temp\java\UStore\Cartes\RegisterCB_Buyer.java:34: error: class RegisterCB_Unregistered_Buyer is public, should be declared in a file named RegisterCB_Unregistered_Buyer.java
   public class RegisterCB_Unregistered_Buyer {
          ^
-C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110446_4173744789608057176252\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium3979737849508022158temp\java\UStore\Cartes\RegisterCB_Unregistered_Buyer.java:34: error: duplicate class: RegisterCB_Unregistered_Buyer
+C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110908_201815857970960341516\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium7551608244974598646temp\java\UStore\Cartes\RegisterCB_Unregistered_Buyer.java:34: error: duplicate class: RegisterCB_Unregistered_Buyer
 public class RegisterCB_Unregistered_Buyer {
        ^
 2 errors
@@ -21,10 +21,10 @@ TEST :
 	[ERROR] 	CONVERT __temp_0.file TO script.java(compile) AS __temp_1.compiled
 org.squashtest.ta.backbone.exception.EngineRuntimeException: Test Automation Engine error (non SUT) : method &apos;convert&apos; from engine component of class &apos;org.squashtest.ta.plugin.commons.converter.FileToJavaCodeBundle&apos; with argument &apos;org.squashtest.ta.framework.components.FileResource&apos;  has thrown an exception.
 Details: Java code compilation failed:
-C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110446_4173744789608057176252\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium3979737849508022158temp\java\UStore\Cartes\RegisterCB_Buyer.java:34: error: class RegisterCB_Unregistered_Buyer is public, should be declared in a file named RegisterCB_Unregistered_Buyer.java
+C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110908_201815857970960341516\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium7551608244974598646temp\java\UStore\Cartes\RegisterCB_Buyer.java:34: error: class RegisterCB_Unregistered_Buyer is public, should be declared in a file named RegisterCB_Unregistered_Buyer.java
   public class RegisterCB_Unregistered_Buyer {
          ^
-C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110446_4173744789608057176252\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium3979737849508022158temp\java\UStore\Cartes\RegisterCB_Unregistered_Buyer.java:34: error: duplicate class: RegisterCB_Unregistered_Buyer
+C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110908_201815857970960341516\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium7551608244974598646temp\java\UStore\Cartes\RegisterCB_Unregistered_Buyer.java:34: error: duplicate class: RegisterCB_Unregistered_Buyer
 public class RegisterCB_Unregistered_Buyer {
        ^
 2 errors
@@ -71,10 +71,10 @@ public class RegisterCB_Unregistered_Buyer {
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
 Caused by: org.squashtest.ta.framework.exception.BadDataException: Java code compilation failed:
-C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110446_4173744789608057176252\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium3979737849508022158temp\java\UStore\Cartes\RegisterCB_Buyer.java:34: error: class RegisterCB_Unregistered_Buyer is public, should be declared in a file named RegisterCB_Unregistered_Buyer.java
+C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110908_201815857970960341516\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium7551608244974598646temp\java\UStore\Cartes\RegisterCB_Buyer.java:34: error: class RegisterCB_Unregistered_Buyer is public, should be declared in a file named RegisterCB_Unregistered_Buyer.java
   public class RegisterCB_Unregistered_Buyer {
          ^
-C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110446_4173744789608057176252\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium3979737849508022158temp\java\UStore\Cartes\RegisterCB_Unregistered_Buyer.java:34: error: duplicate class: RegisterCB_Unregistered_Buyer
+C:\Users\GCMBEM~1\AppData\Local\Temp\Squash_TA\20190524_110908_201815857970960341516\tests\tests.UStore.Cartes\RegisterCB_Unregistered_Buyer.ta\selenium7551608244974598646temp\java\UStore\Cartes\RegisterCB_Unregistered_Buyer.java:34: error: duplicate class: RegisterCB_Unregistered_Buyer
 public class RegisterCB_Unregistered_Buyer {
        ^
 2 errors

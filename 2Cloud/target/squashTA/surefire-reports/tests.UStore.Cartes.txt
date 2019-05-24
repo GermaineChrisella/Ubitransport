@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: tests.UStore.Cartes
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 1.489 sec
+Tests run: 1, Failures: 0, Errors: 1, Time elapsed: 1.526 sec
